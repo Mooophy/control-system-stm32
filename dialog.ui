@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>636</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Assignment 6 by Yue Wang 12027710</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>141</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Message</string>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Emmit&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>&amp;Enter</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Please Type:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>10</y>
+     <width>211</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Servo Motor</string>
+   </property>
+   <widget class="QSlider" name="horizontalSlider_Servo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>160</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0-90 degree&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="maximum">
+     <number>90</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>141</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>LEDS</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox_GreenLed">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Green Led&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Green</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_BlueLed">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Blue Led&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Blue</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>521</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Stepper Motor</string>
+   </property>
+   <widget class="QSlider" name="horizontalSlider_Stepper">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>211</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10 Level speed&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_Toggle_STP">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Turn ON/OFF &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>ON/OFF</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_Direction_STP">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>50</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Direction control&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>DIRECTION</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SPEED: 1 to 10</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>250</y>
+     <width>521</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Ultrasonic Sensor</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox_Usensor">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>50</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ON/OFF</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_Us">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>251</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0-5000us&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="maximum">
+     <number>5000</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="format">
+     <string>%p%</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>pushButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Servo</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Dialog</receiver>
+   <slot>ServoCMDchanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>453</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>60</x>
+     <y>268</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BlueLed</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Dialog</receiver>
+   <slot>BlueLedClicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>370</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_GreenLed</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Dialog</receiver>
+   <slot>GreenLedClicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Toggle_STP</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Dialog</receiver>
+   <slot>OnOff_CheckBoxSTM_Clicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>475</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Direction_STP</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Dialog</receiver>
+   <slot>Direction_CheckBoxSTM_Clicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>449</x>
+     <y>206</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Stepper</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Dialog</receiver>
+   <slot>Speed_SpliterSTM_ValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Usensor</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Dialog</receiver>
+   <slot>OnOff_CheckBoxUS_Clicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>458</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>606</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButtonClicked()</slot>
+  <slot>ServoCMDchanged(int)</slot>
+  <slot>BlueLedClicked(bool)</slot>
+  <slot>GreenLedClicked(bool)</slot>
+  <slot>OnOff_CheckBoxSTM_Clicked(bool)</slot>
+  <slot>Direction_CheckBoxSTM_Clicked(bool)</slot>
+  <slot>Speed_SpliterSTM_ValueChanged(int)</slot>
+  <slot>OnOff_CheckBoxUS_Clicked(bool)</slot>
+ </slots>
+</ui>
