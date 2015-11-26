@@ -2,9 +2,8 @@
   *****************************************************************************
   * @file    dialog.h
   * @author  Yue Wang 12027710
-  * @version V1.0.0
   * @date    03-June-2013
-  * @brief   For the Assignment 6, 159.270 Hardware Oriented Programming.
+  * @brief   PC part, using Qt.
    ****************************************************************************
   */
 #ifndef DIALOG_H
